@@ -1,0 +1,100 @@
+.card {
+  width: 31%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--primary-light-color);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin: 20px 0;
+}
+
+.card > img,
+.card > h2,
+.card > p,
+.card > a {
+  margin: 0 6%;
+}
+
+.card > img {
+  height: 27%;
+  width: 60%;
+  object-fit: contain;
+}
+
+.card > h2 {
+  height: 18%;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.card > p {
+  height: 35%;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+.card > a {
+  height: auto;
+  margin-top: 0;
+}
+
+.popContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.popContent > p {
+  line-height: 21.6px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* 
+--------------------------
+Adjust for vertical Tablet
+--------------------------
+*/
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 48%;
+  }
+}
+
+/* 
+-----------------
+Adjust for Mobile
+-----------------
+*/
+@media screen and (max-width: 800px) {
+  .card {
+    width: 100%;
+    height: 300px;
+  }
+
+  .card > img {
+    height: 25%;
+  }
+
+  .card > h2 {
+    font-size: 30px;
+  }
+
+  .card > p {
+    height: 35%;
+    font-size: 15px;
+  }
+
+  .popContent > p {
+    line-height: 14px;
+    font-size: 12px;
+  }
+}

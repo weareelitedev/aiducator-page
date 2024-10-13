@@ -1,0 +1,61 @@
+.container {
+  bottom: 30px;
+  left: 50%;
+  position: fixed;
+  transform: translateX(-50%) !important;
+  padding: 18px 14px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 100px;
+  background-color: #051d2ea3;
+  backdrop-filter: blur(20px);
+  -webkit-box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 9999999999;
+}
+
+.container > a > img {
+  width: 60px;
+}
+
+.linksCont {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.linksCont a {
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 100px;
+  color: var(--white-color);
+  border: 1px solid #ffffff57;
+}
+
+.contactBtn {
+  color: var(--primary-color) !important;
+  background-color: #ffffff99;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    height: 60px;
+    gap: 10px;
+    padding: 0px 12px;
+  }
+
+  .linksCont {
+    gap: 6px;
+  }
+
+  .linksCont a {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .container > a > img {
+    width: 40px;
+  }
+}
