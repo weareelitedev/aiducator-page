@@ -30,6 +30,7 @@ function EndSection({
               ? { objectPosition: "center" }
               : { objectPosition: "right" }
           }
+          loading="lazy"
         />
       )}
       <div className={styles.contactSectionCont}>

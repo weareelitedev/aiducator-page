@@ -3,10 +3,23 @@ import Button from "../Button";
 import { smallRightArrow } from "../../constants/assets";
 import styles from "./heroSection.module.css";
 
-function HeroSection({ title, subTitle, description, image, onClick }) {
+function HeroSection({
+  title,
+  subTitle,
+  description,
+  image,
+  onClick,
+  setIsLoaded,
+}) {
   return (
     <section className={styles.firstSection}>
-      <img className={styles.heroBackground} src={image} alt="cubes-bg" />
+      <img
+        className={styles.heroBackground}
+        src={image}
+        alt="cubes-bg"
+        loading="lazy"
+        onLoad={() => setIsLoaded(true)}
+      />
       <div className={styles.sectionContent}>
         <div className={styles.upperSection}>
           <FadeUpEffect tag="p" className={styles.mainSubTitle}>
