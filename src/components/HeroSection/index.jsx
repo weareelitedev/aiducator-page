@@ -17,7 +17,7 @@ function HeroSection({ title, subTitle, description, image, onClick }) {
           </FadeUpEffect>
         </div>
         <div className={styles.lowerSection}>
-          <Button href="#" id={2} img={smallRightArrow} onClick={onClick}>
+          <Button id={2} img={smallRightArrow} onClick={onClick}>
             Book a Demo
           </Button>
           <FadeUpEffect tag="p" className={styles.lowerSectionContent}>

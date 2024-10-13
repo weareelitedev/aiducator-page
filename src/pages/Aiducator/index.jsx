@@ -17,6 +17,7 @@ import { TextField } from "@mui/material";
 import useDisplay from "../../hooks/useDisplay";
 import Popup from "../../components/Popup";
 import Footer from "../../components/Footer";
+import { useLocation, useNavigate, useNavigation } from "react-router-dom";
 
 function Aiducator() {
   const [isMobileDisplay] = useDisplay();
@@ -80,6 +81,8 @@ function Aiducator() {
     },
   ];
 
+  const router = useNavigate();
+
   return (
     <>
       <HeroSection
@@ -89,7 +92,11 @@ function Aiducator() {
           "We empower schools and universities to harness cutting-edge technology, transforming teaching and learning for remarkable outcomes."
         }
         image={cubesImgBg}
-        onClick={() => setIsOpen(true)}
+        onClick={() => {
+          if (window && window.location) {
+            window.location.href = "https://www.cts.ae/contact-us/";
+          }
+        }}
       />
       <section className={styles.secondSection}>
         <FadeUpEffect tag="h2">{"Discover AiDucator"}</FadeUpEffect>
