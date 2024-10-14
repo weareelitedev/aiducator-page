@@ -44,14 +44,22 @@ function ContactSection({
             <p>{desc}</p>
             <div className={styles.dividerHorizontal}></div>
 
-            <Button href="#" id={1} img={arrowRight}>
+            <Button
+              href="https://www.cts.ae/contact-us/"
+              id={1}
+              img={arrowRight}
+            >
               Contact Us
             </Button>
           </FadeUpEffect>
         )}
         {!isMobileDisplay && (
           <FadeUpEffect tag="div" className={styles.ContactSectionContent}>
-            <Button href="#" id={1} img={arrowRight}>
+            <Button
+              href="https://www.cts.ae/contact-us/"
+              id={1}
+              img={arrowRight}
+            >
               Contact Us
             </Button>
 

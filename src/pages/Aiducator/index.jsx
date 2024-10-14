@@ -56,7 +56,11 @@ function Aiducator() {
             traditional searches and hello to a smarter, more efficient way to
             connect with your prospective community.
           </FadeUpEffect>
-          <Button href="#" id={3} img={smallRightArrow}>
+          <Button
+            href="https://www.cts.ae/contact-us/"
+            id={3}
+            img={smallRightArrow}
+          >
             Learn more
           </Button>
         </section>
@@ -89,7 +93,11 @@ function Aiducator() {
             traditional search methods feel outdated, inefficient, and
             impersonal.
           </FadeUpEffect>
-          <Button href="#" id={3} img={smallRightArrow}>
+          <Button
+            href="https://www.cts.ae/contact-us/"
+            id={3}
+            img={smallRightArrow}
+          >
             Book a Demo
           </Button>
         </section>

@@ -47,7 +47,11 @@ function EndSection({
           </FadeUpEffect>
         </div>
         <FadeUpEffect tag="div" className={styles.contactSectionLowerBox}>
-          <Button href="#" id={1} img={contactArrow}>
+          <Button
+            href="https://www.cts.ae/contact-us/"
+            id={1}
+            img={contactArrow}
+          >
             Contact Us
           </Button>
           <div className={styles.separator}></div>
